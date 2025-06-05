@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mahsulot qo‘shish</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center px-4 py-10">
+  <div class="bg-white p-8 rounded-2xl shadow-lg w-full max-w-xl">
+    <h2 class="text-2xl font-bold text-center text-gray-800 mb-6">Mahsulot qo‘shish</h2>
+
+    <form class="space-y-5" method="post" action="/main/addproduct/">
+
+        {% csrf_token %}
+
+      <!-- Mahsulot nomi -->
+      <div>
+        <label class="block mb-1 text-gray-700 font-medium">Mahsulot nomi</label>
+        <input type="text" name="name" placeholder="Masalan: Paratsetamol" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500" />
+      </div>
+
+      <!-- Narxi -->
+      <div>
+        <label class="block mb-1 text-gray-700 font-medium">Narxi (so‘m)</label>
+        <input type="number" name="price" placeholder="Masalan: 15000" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500" />
+      </div>
+
+      <!-- Kategoriya -->
+      <div>
+        <label class="block mb-1 text-gray-700 font-medium">Kategoriya</label>
+        <select name="category" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500">
+          <option value="">Tanlang</option>
+          {% for i in category%}
+          <option value="{{i.id}}">{{i.name}}</option>
+          {% endfor %}
+         
+        </select>
+      </div>
+
+      <!-- Rasmlar -->
+      <div>
+        <label class="block mb-1 text-gray-700 font-medium">Mahsulot rasmi</label>
+        <input type="file" name="image" class="w-full border border-gray-300 rounded-lg px-4 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-green-500" />
+      </div>
+     <div>
+        <label class="block mb-1 text-gray-700 font-medium">Mahsulot chegirma</label>
+        <input type="number" name="discount" class="w-full border border-gray-300 rounded-lg px-4 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-green-500" />
+      </div>
+
+      <div>
+        <label class="block mb-1 text-gray-700 font-medium">Mahsulot chegirma narxi</label>
+        <input type="number" name="new_price" class="w-full border border-gray-300 rounded-lg px-4 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-green-500" />
+      </div>
+
+      <!-- Tavsif -->
+      <div>
+        <label class="block mb-1 text-gray-700 font-medium">Tavsif</label>
+        <textarea name="text" placeholder="Mahsulot haqida batafsil yozing" rows="4" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500"></textarea>
+      </div>
+      
+
+      <!-- Saqlash tugmasi -->
+      <div class="text-center">
+        <button type="submit" class="bg-green-500 text-white px-6 py-2 rounded-xl font-semibold hover:bg-green-600 transition duration-200">
+          Saqlash
+        </button>
+      </div>
+
+    </form>
+  </div>
+</body>
+</html>

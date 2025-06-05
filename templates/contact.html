@@ -1,0 +1,16 @@
+{% extends 'blank.html' %}
+{% load static %}
+{% block content %}
+
+    <form action="/main/contact/" method="post">
+        {% csrf_token %}
+
+        <input type="text" name="first_name" placeholder="Ismizi kriting: ">
+        <input type="text" name="last_name" placeholder="familyezi kriting: ">
+        <input type="text" name="job" placeholder="kasbizi kriting: ">
+        <textarea name="text" placeholder="xabar yuboring"></textarea>
+        <button type="submit" >Saqlash</button>
+
+    </form>
+
+    {% endblock content %}

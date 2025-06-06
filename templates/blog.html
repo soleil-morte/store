@@ -1,0 +1,155 @@
+{% extends 'blank.html' %}
+{% load static %}
+{% block content %}
+<style>
+    /* Основные стили для контейнера */
+    .container {
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+
+    /* Стили для списка постов */
+    .posts-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+
+    /* Стили для отдельного поста */
+    .post {
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .post:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .post img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-bottom: 1px solid #eee;
+    }
+
+    .post-title {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #333;
+        margin: 20px 20px 10px;
+    }
+
+    .post-meta {
+        padding: 0 20px;
+        color: #666;
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+
+    .post-content {
+        padding: 0 20px;
+        color: #444;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    .post-content p {
+        margin: 0;
+    }
+
+    /* Стили для кнопки */
+    .post a {
+        display: inline-block;
+        margin: 0 20px 20px;
+    }
+
+    .post button {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background-color 0.3s;
+    }
+
+    .post button:hover {
+        background-color: #45a049;
+    }
+
+    /* Стили для формы */
+    form {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        margin-top: 50px;
+    }
+
+    .rasm, .ism, .info {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+
+    .info {
+        min-height: 150px;
+        resize: vertical;
+    }
+
+    form button[type="submit"] {
+        background-color: #2196F3;
+        color: white;
+        border: none;
+        padding: 12px 25px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background-color 0.3s;
+    }
+
+    form button[type="submit"]:hover {
+        background-color: #0b7dda;
+    }
+</style>
+<div class="container">
+    <div class="posts-container">
+        {% for i in news %}
+        <article class="post">
+            <img src="{{i.image.url}}" alt="">
+            <h2 class="post-title">{{i.name}}</h2>
+            <div class="post-meta">
+                <span>{{i.date_created}}</span>
+            </div>
+            <div class="post-content">
+                <p>{{i.review}}</p>
+            </div>
+            <a href="/main/fullinfo/{{i.id}}/"><button>Batafsil o'qish</button></a>
+        </article>
+        {% endfor %}
+    </div>
+
+    <h1>Your news:</h1>
+
+    <form action="/main/blog/" method="post">
+        {% csrf_token %}
+        <input class="rasm" type="file" name="image" id="">
+        <input class="ism" type="text" name="name" id="" placeholder="name of your post">
+        <textarea class="info" name="review" id="">Write your review</textarea>
+        <textarea class="info" name="text" id="">Write the full text</textarea>
+        <button type="submit" >Saqlash</button>
+    </form>
+</div>
+
+{% endblock content %}

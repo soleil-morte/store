@@ -6,5 +6,7 @@ urlpatterns=[
     path('productdetail/<int:pk>/', ProductDetail.as_view()),
     path('addproduct/',AddProduct),
     path('contact/',Sms),
-    path('categories/',Categories)
+    path('categories/',Categories),
+    path('blog/',Blog),
+    path('fullinfo/<int:pk>/',Fullinfo.as_view())
 ]

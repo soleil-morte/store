@@ -32,3 +32,14 @@ class Contact(models.Model):
 
     def __str__(self):
         return self.first_name
+
+
+class News(models.Model):
+    name = models.CharField(max_length=120)
+    image  = models.ImageField(upload_to='media/')
+    date_created = models.DateTimeField(auto_now_add=True)
+    review = models.CharField(max_length=500)
+    text = models.TextField()
+
+    def __str__(self):
+        return self.name

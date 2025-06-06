@@ -8,12 +8,34 @@ class ProductDetail(DetailView):
     template_name = 'product.html'
     context_object_name = 'product'
 
+class Fullinfo(DetailView):
+    model = News
+    template_name = 'fullinfo.html'
+    context_object_name = 'fullinfo'
+
 def Index(request):
     context = {
         'category':Category.objects.all(),
         'product':Products.objects.all()
     }
     return render(request, 'index.html', context)
+
+
+def Blog(request):
+    if request.method == 'POST':
+        r = request.POST
+        name = r['name']
+        image = r['image']
+        review = r['review']
+        text = r['text']
+        News.objects.create(name=name, image=image, text=text, review=review)
+
+        return redirect('/main/blog/')
+
+    context = {
+        'news': News.objects.all()
+    }
+    return render(request, 'blog.html', context)
 
 
 def Store(request):

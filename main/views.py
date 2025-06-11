@@ -1,6 +1,9 @@
 from django.shortcuts import render,redirect
 from .models import *
 from django.views.generic import DetailView
+from django.contrib.auth.models import User
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth import authenticate,login,logout 
 
 # Create your views here.
 class ProductDetail(DetailView):
@@ -99,3 +102,31 @@ def Categories(request):
         return redirect('/main/index/')
     
     return render(request,'categories.html')
+
+
+def Register(request):
+    if request.method == "POST":
+        form = UserCreationForm(request.POST)
+
+        if form.is_valid():
+            form.save()
+            return redirect('/main/index/')
+    else:
+        form = UserCreationForm()
+    
+    context={
+        'form':form
+    }
+
+    return render(request, 'registration/register.html', context)
+
+
+def Login(request):
+    if request.method == 'POST':
+        username = request.POST['usernamne']
+        password = request.POST['password']
+        form = authenticate(request, username=username, password=password)
+        if form is not None:
+            login(request,form)
+            return redirect('main/index/')
+        return render(request, 'registration/login.html')

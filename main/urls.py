@@ -12,5 +12,6 @@ urlpatterns=[
     path('blog/',Blog),
     path('fullinfo/<int:pk>/',Fullinfo.as_view()),
     path('auth-registration/', Register),
-    path('auth-login/', LoginView.as_view())
+    path('auth-login/', LoginView.as_view()),
+    path('logout/', Logout)
 ]

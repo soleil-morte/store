@@ -4,6 +4,7 @@ from django.views.generic import DetailView
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import authenticate,login,logout 
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 class ProductDetail(DetailView):
@@ -16,6 +17,7 @@ class Fullinfo(DetailView):
     template_name = 'fullinfo.html'
     context_object_name = 'fullinfo'
 
+@login_required(login_url='/main/auth-login/')
 def Index(request):
     context = {
         'category':Category.objects.all(),
@@ -130,3 +132,8 @@ def Login(request):
             login(request,form)
             return redirect('main/index/')
         return render(request, 'registration/login.html')
+    
+
+def Logout(request):
+    logout(request)
+    return redirect('/main/index/')

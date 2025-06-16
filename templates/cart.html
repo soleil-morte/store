@@ -1,0 +1,201 @@
+{% extends 'blank.html' %}
+{% load static %}
+{% block content %}
+<style>
+    .cartblock .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 30px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .cart-empty {
+        text-align: center;
+        padding: 50px 0;
+        color: #666;
+    }
+
+    .cart-items {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .cart-items th {
+        text-align: left;
+        padding: 12px;
+        background-color: #f8f8f8;
+        border-bottom: 2px solid #ddd;
+    }
+
+    .cart-items td {
+        padding: 15px 12px;
+        border-bottom: 1px solid #eee;
+        vertical-align: middle;
+    }
+
+    .cart-item-img {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 4px;
+    }
+
+    .item-title {
+        font-weight: bold;
+        color: #333;
+    }
+
+    .item-price {
+        font-weight: bold;
+        color: #e53935;
+    }
+
+    .quantity-input {
+        width: 60px;
+        padding: 8px;
+        text-align: center;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    .remove-btn {
+        background: none;
+        border: none;
+        color: #666;
+        cursor: pointer;
+        font-size: 18px;
+    }
+
+    .remove-btn:hover {
+        color: #e53935;
+    }
+
+    .cart-summary {
+        margin-top: 30px;
+        padding: 20px;
+        background-color: #f8f8f8;
+        border-radius: 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .total-price {
+        font-size: 20px;
+        font-weight: bold;
+        color: #e53935;
+    }
+
+    .checkout-btn {
+        background-color: #af4c4c;
+        color: white;
+        border: none;
+        padding: 12px 25px;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .checkout-btn:hover {
+        background-color: #8e3838;
+    }
+
+    .continue-shopping {
+        display: inline-block;
+        margin-top: 20px;
+        color: #f32121;
+        text-decoration: none;
+    }
+
+    .continue-shopping:hover {
+        text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+        .cart-items thead {
+            display: none;
+        }
+
+        .cart-items tr {
+            display: block;
+            margin-bottom: 15px;
+            border: 1px solid #eee;
+            border-radius: 4px;
+            padding: 10px;
+        }
+
+        .cart-items td {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: none;
+        }
+
+        .cart-items td::before {
+            content: attr(data-label);
+            font-weight: bold;
+            margin-right: 15px;
+        }
+    }
+</style>
+<div class="cartblock">
+
+    <div class="container">
+        <h1>Ваша корзина</h1>
+
+        <table class="cart-items">
+            <thead>
+                <tr>
+                    <th>Товар</th>
+                    <th>Цена</th>
+                    <th>Количество</th>
+                    <th>Итого</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for i in order_item %}
+                <tr>
+                    <td data-label="Товар">
+                        <div style="display: flex; align-items: center;">
+                            <img src="{{i.product.image.url}}" alt="Товар 1" class="cart-item-img">
+                            <span class="item-title" style="margin-left: 15px;">{{i.product.name}}</span>
+                        </div>
+                    </td>
+                    <td data-label="Цена"><span class="item-price">{{i.product.price}}$</span></td>
+                    <td data-label="Количество">
+                        <input type="number" class="quantity-input" value="1" min="1">
+                    </td>
+                    <td data-label="Итого"><span class="item-price">25 990 ₽</span></td>
+                    <td data-label="">
+                        <button class="remove-btn" title="Удалить">×</button>
+                    </td>
+                </tr>
+
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <div class="cart-summary">
+            <div>
+                <strong>Общая сумма:</strong>
+                <span class="total-price">40 970 ₽</span>
+            </div>
+            <button class="checkout-btn">Оформить заказ</button>
+        </div>
+
+        <a href="#" class="continue-shopping">← Продолжить покупки</a>
+    </div>
+</div>
+{% endblock %}

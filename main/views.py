@@ -5,6 +5,7 @@ from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import authenticate,login,logout 
 from django.contrib.auth.decorators import login_required
+from django.shortcuts import get_object_or_404
 
 # Create your views here.
 class ProductDetail(DetailView):
@@ -17,13 +18,19 @@ class Fullinfo(DetailView):
     template_name = 'fullinfo.html'
     context_object_name = 'fullinfo'
 
-@login_required(login_url='/main/auth-login/')
 def Index(request):
     context = {
         'category':Category.objects.all(),
         'product':Products.objects.all()
     }
     return render(request, 'index.html', context)
+
+def Cart(request):
+    context = {
+        'product':Products.objects.all(),
+        'order_item':OrderItem.objects.all()
+    }
+    return render(request, 'cart.html', context)
 
 
 def Blog(request):
@@ -136,4 +143,19 @@ def Login(request):
 
 def Logout(request):
     logout(request)
+    return redirect('/main/index/')
+
+
+@login_required(login_url='/main/auth-login/') 
+def add_to_cart(request, product_id):
+    product = get_object_or_404(Products, id=product_id)
+
+    order, created = Order.objects.get_or_create(user=request.user, is_ordered=False)
+
+    order_item, item_created = OrderItem.objects.get_or_create(order=order, product=product)
+
+    if not item_created:
+        order_item.quantity += 1
+        order_item.save()
+
     return redirect('/main/index/')

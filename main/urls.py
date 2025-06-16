@@ -13,5 +13,7 @@ urlpatterns=[
     path('fullinfo/<int:pk>/',Fullinfo.as_view()),
     path('auth-registration/', Register),
     path('auth-login/', LoginView.as_view()),
-    path('logout/', Logout)
+    path('logout/', Logout),
+    path('cart/', Cart),
+    path('add/<int:product_id>/', add_to_cart, name='add_to_cart'),
 ]

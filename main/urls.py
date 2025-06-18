@@ -16,4 +16,7 @@ urlpatterns=[
     path('logout/', Logout),
     path('cart/', Cart),
     path('add/<int:product_id>/', add_to_cart, name='add_to_cart'),
+    path('delete/<int:id>/', Delete),
+    path('increase/<int:id>/', Increase),
+    path('decrease/<int:id>/', Decrease),
 ]

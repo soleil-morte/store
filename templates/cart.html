@@ -175,11 +175,13 @@
                     </td>
                     <td data-label="Цена"><span class="item-price">{{i.product.price}}$</span></td>
                     <td data-label="Количество">
-                        <input type="number" class="quantity-input" value="1" min="1">
+                       <a href="/main/decrease/{{i.id}}/"><span>-</span></a>
+                        <input type="number" class="quantity-input" value="{{i.quantity}}" min="1">
+                        <a href="/main/increase/{{i.id}}/"><span>+</span></a>
                     </td>
-                    <td data-label="Итого"><span class="item-price">25 990 ₽</span></td>
+                    <td data-label="Итого"><span class="item-price">{{i.total_price}}$</span></td>
                     <td data-label="">
-                        <button class="remove-btn" title="Удалить">×</button>
+                        <a href="/main/delete/{{i.id}}/"><button class="remove-btn" title="Удалить">×</button></a>
                     </td>
                 </tr>
 

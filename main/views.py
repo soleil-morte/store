@@ -156,6 +156,36 @@ def add_to_cart(request, product_id):
 
     if not item_created:
         order_item.quantity += 1
+        order_item.total_price = float(order_item.quantity)*float(order_item.product.price)
         order_item.save()
 
     return redirect('/main/index/')
+
+
+def Delete(request, id):
+    delete = OrderItem.objects.get(id=id)
+
+    delete.delete()
+
+    return redirect('/main/cart/')
+
+
+def Increase(request, id):
+    order = OrderItem.objects.get(id=id)
+    order.quantity+=1
+    # order1=OrderItem.objects.get(client=request.user)
+    order.total_price+=order.product.price
+    order.save()
+
+    return redirect('/main/cart/')
+
+
+def Decrease(request, id):
+    order = OrderItem.objects.get(id=id)
+    if order.quantity>1:
+        order.quantity-=1
+    # order1=OrderItem.objects.get(client=request.user)
+        order.total_price-=order.product.price
+        order.save()
+
+    return redirect('/main/cart/')

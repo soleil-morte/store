@@ -28,7 +28,7 @@ def Index(request):
 def Cart(request):
     context = {
         'product':Products.objects.all(),
-        'order_item':OrderItem.objects.all()
+        'order_item':Order.objects.filter(user=request.user, is_ordered=False).first()
     }
     return render(request, 'cart.html', context)
 

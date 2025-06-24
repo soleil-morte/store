@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -52,7 +53,7 @@
 						<li><a href="/ru/main/index/"><i class="fa fa-language"></i> RU</a></li>
 						<li><a href="/en/main/index/"><i class="fa fa-language"></i> ENG</a></li>
 						<li><a href="#"><i class="fa fa-dollar"></i> USD</a></li>
-						<li><a href="#"><i class="fa fa-user-o"></i> My Account</a></li>
+						<li><a href="#"><i class="fa fa-user-o"></i> {% trans 'My Account'%}</a></li>
 					</ul>
 				</div>
 			</div>
@@ -79,12 +80,12 @@
 							<div class="header-search">
 								<form>
 									<select class="input-select">
-										<option value="0">All Categories</option>
+										<option value="0">{% trens 'All Categories' %}</option>
 										<option value="1">Category 01</option>
 										<option value="1">Category 02</option>
 									</select>
 									<input class="input" placeholder="Search here">
-									<button class="search-btn">Search</button>
+									<button class="search-btn">{% trens 'Search' %}</button>
 								</form>
 							</div>
 						</div>
@@ -97,7 +98,7 @@
 								<div>
 									<a href="#">
 										<i class="fa fa-heart-o"></i>
-										<span>Your Wishlist</span>
+										<span>{% trens 'Your Wishlist' %}</span>
 										<div class="qty">2</div>
 									</a>
 								</div>
@@ -174,22 +175,22 @@
 				<div id="responsive-nav">
 					<!-- NAV -->
 					<ul class="main-nav nav navbar-nav">
-						<li class="active"><a href="../index">Home</a></li>
+						<li class="active"><a href="../index">{% trans 'Home'%}</a></li>
 						{% if request.user.is_authenticated and request.user.is_staff %}
-						<li><a href="/main/addproduct">Product</a></li>
+						<li><a href="/main/addproduct">{% trans 'Product'%}</a></li>
 						{% endif %}
-						<li><a href="../store">Store</a></li>
-						<li><a href="../categories">Categories</a></li>
+						<li><a href="../store">{% trans 'Store'%}</a></li>
+						<li><a href="../categories">{% trans 'Categories'%}</a></li>
 						{% if request.user.is_authenticated and request.user.is_staff %}
-						<li><a href="../blog">Blog</a></li>
+						<li><a href="../blog">{% trans 'Blog'%}</a></li>
 						{% endif %}
 						{% if request.user.is_authenticated %}
-						<li><a href="/main/logout">Logout</a></li>
+						<li><a href="/main/logout">{% trans 'Logout'%}</a></li>
 						{% else %}
-						<li><a href="/main/auth-login">Login</a></li>
+						<li><a href="/main/auth-login">{% trans 'Login'%}</a></li>
 						{% endif %}
-						<li><a href="../contact">Contact Us</a></li>
-						<li><a href="../checkout">Checkout</a></li>
+						<li><a href="../contact">{% trans 'Contact Us'%}</a></li>
+						<li><a href="../checkout">{% trans 'Checkout'%}</a></li>
 					</ul>
 					<!-- /NAV -->
 				</div>
@@ -211,7 +212,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="newsletter">
-							<p>Sign Up for the <strong>NEWSLETTER</strong></p>
+							<p>{% trans 'Sign Up for the' }%<strong>{% trans 'NEWSLETTER' %}</strong></p>
 							<form>
 								<input class="input" type="email" placeholder="Enter Your Email">
 								<button class="newsletter-btn"><i class="fa fa-envelope"></i> Subscribe</button>
@@ -249,10 +250,10 @@
 					<div class="row">
 						<div class="col-md-3 col-xs-6">
 							<div class="footer">
-								<h3 class="footer-title">About Us</h3>
+								<h3 class="footer-title">{% trans 'About Us'%}</h3>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
 								<ul class="footer-links">
-									<li><a href="#"><i class="fa fa-map-marker"></i>1734 Stonecoal Road</a></li>
+									<li><a href="#"><i class="fa fa-map-marker"></i>{% trans '1734 Stonecoal Road'%}</a></li>
 									<li><a href="#"><i class="fa fa-phone"></i>+021-95-51-84</a></li>
 									<li><a href="#"><i class="fa fa-envelope-o"></i>email@email.com</a></li>
 								</ul>
@@ -261,13 +262,13 @@
 
 						<div class="col-md-3 col-xs-6">
 							<div class="footer">
-								<h3 class="footer-title">Categories</h3>
+								<h3 class="footer-title">{% trans 'Categories' %}</h3>
 								<ul class="footer-links">
-									<li><a href="#">Hot deals</a></li>
-									<li><a href="#">Laptops</a></li>
-									<li><a href="#">Smartphones</a></li>
-									<li><a href="#">Cameras</a></li>
-									<li><a href="#">Accessories</a></li>
+									<li><a href="#">{% trans 'Hot deals' %}</a></li>
+									<li><a href="#">{% trans 'Laptops' %}</a></li>
+									<li><a href="#">{% trans 'Smartphones' %}</a></li>
+									<li><a href="#">{% trans 'Cameras' %}</a></li>
+									<li><a href="#">{% trans 'Accessories' %}</a></li>
 								</ul>
 							</div>
 						</div>
@@ -276,26 +277,26 @@
 
 						<div class="col-md-3 col-xs-6">
 							<div class="footer">
-								<h3 class="footer-title">Information</h3>
+								<h3 class="footer-title">{% trans 'Information'%}</h3>
 								<ul class="footer-links">
-									<li><a href="#">About Us</a></li>
-									<li><a href="#">Contact Us</a></li>
-									<li><a href="#">Privacy Policy</a></li>
-									<li><a href="#">Orders and Returns</a></li>
-									<li><a href="#">Terms & Conditions</a></li>
+									<li><a href="#">{% trans 'About Us'%}</a></li>
+									<li><a href="#">{% trans 'Contact Us'%}</a></li>
+									<li><a href="#">{% trans 'Privacy Policy'%}</a></li>
+									<li><a href="#">{% trans 'Orders and Returns'%}</a></li>
+									<li><a href="#">{% trans 'Terms & Conditions'%}</a></li>
 								</ul>
 							</div>
 						</div>
 
 						<div class="col-md-3 col-xs-6">
 							<div class="footer">
-								<h3 class="footer-title">Service</h3>
+								<h3 class="footer-title">{% trans 'Service'%}</h3>
 								<ul class="footer-links">
-									<li><a href="#">My Account</a></li>
-									<li><a href="#">View Cart</a></li>
-									<li><a href="#">Wishlist</a></li>
-									<li><a href="#">Track My Order</a></li>
-									<li><a href="#">Help</a></li>
+									<li><a href="#">{% trans 'My Account'%}</a></li>
+									<li><a href="#">{% trans 'View Cart'%}</a></li>
+									<li><a href="#">{% trans 'Wishlist'%}</a></li>
+									<li><a href="#">{% trans 'Track My Order'%}</a></li>
+									<li><a href="#">{% trans 'Help'%}</a></li>
 								</ul>
 							</div>
 						</div>

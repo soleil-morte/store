@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-24 14:10+0300\n"
+"POT-Creation-Date: 2025-06-24 15:07+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,6 +20,20 @@ msgstr ""
 
 #: .\templates\blank.html:56 .\templates\blank.html:295
 msgid "My Account"
+msgstr "My Account"
+
+#: .\templates\blank.html:83
+#, fuzzy
+#| msgid "Categories"
+msgid "All Categories"
+msgstr "Categories"
+
+#: .\templates\blank.html:88
+msgid "Search"
+msgstr ""
+
+#: .\templates\blank.html:101
+msgid "Your Wishlist"
 msgstr ""
 
 #: .\templates\blank.html:178
@@ -61,6 +75,10 @@ msgstr "Checkout"
 #: .\templates\blank.html:215
 msgid "Sign Up for the"
 msgstr "Sign Up for the"
+
+#: .\templates\blank.html:215
+msgid "NEWSLETTER"
+msgstr ""
 
 #: .\templates\blank.html:253 .\templates\blank.html:282
 msgid "About Us"

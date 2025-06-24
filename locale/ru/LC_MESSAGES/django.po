@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-24 14:10+0300\n"
+"POT-Creation-Date: 2025-06-24 15:06+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,111 +22,131 @@ msgstr ""
 
 #: .\templates\blank.html:56 .\templates\blank.html:295
 msgid "My Account"
+msgstr "Мой Аккаунт"
+
+#: .\templates\blank.html:83
+#, fuzzy
+#| msgid "Categories"
+msgid "All Categories"
+msgstr "Категории"
+
+#: .\templates\blank.html:88
+msgid "Search"
 msgstr ""
+
+#: .\templates\blank.html:101
+#, fuzzy
+#| msgid "Wishlist"
+msgid "Your Wishlist"
+msgstr "Понравившееся"
 
 #: .\templates\blank.html:178
 msgid "Home"
-msgstr ""
+msgstr "Главная"
 
 #: .\templates\blank.html:180
 msgid "Product"
-msgstr ""
+msgstr "Продукт"
 
 #: .\templates\blank.html:182
 msgid "Store"
-msgstr ""
+msgstr "Магазин"
 
 #: .\templates\blank.html:183 .\templates\blank.html:265
 msgid "Categories"
-msgstr ""
+msgstr "Категории"
 
 #: .\templates\blank.html:185
 msgid "Blog"
-msgstr ""
+msgstr "Блог"
 
 #: .\templates\blank.html:188
 msgid "Logout"
-msgstr ""
+msgstr "Выйти"
 
 #: .\templates\blank.html:190
 msgid "Login"
-msgstr ""
+msgstr "Войти"
 
 #: .\templates\blank.html:192 .\templates\blank.html:283
 msgid "Contact Us"
-msgstr ""
+msgstr "Связаться с нами"
 
 #: .\templates\blank.html:193
 msgid "Checkout"
-msgstr ""
+msgstr "Оформление Заказа"
 
 #: .\templates\blank.html:215
 msgid "Sign Up for the"
-msgstr ""
+msgstr "Подписаться на"
+
+#: .\templates\blank.html:215
+msgid "NEWSLETTER"
+msgstr "РАССЫЛКУ"
 
 #: .\templates\blank.html:253 .\templates\blank.html:282
 msgid "About Us"
-msgstr ""
+msgstr "О Нас"
 
 #: .\templates\blank.html:256
 msgid "1734 Stonecoal Road"
-msgstr ""
+msgstr "ул. Стоункоул, 1734"
 
 #: .\templates\blank.html:267
 msgid "Hot deals"
-msgstr ""
+msgstr "Акции"
 
 #: .\templates\blank.html:268
 msgid "Laptops"
-msgstr ""
+msgstr "Ноутбуки"
 
 #: .\templates\blank.html:269
 msgid "Smartphones"
-msgstr ""
+msgstr "Смартфоны"
 
 #: .\templates\blank.html:270
 msgid "Cameras"
-msgstr ""
+msgstr "Фотоаппараты"
 
 #: .\templates\blank.html:271
 msgid "Accessories"
-msgstr ""
+msgstr "Аксессуары"
 
 #: .\templates\blank.html:280
 msgid "Information"
-msgstr ""
+msgstr "Информация"
 
 #: .\templates\blank.html:284
 msgid "Privacy Policy"
-msgstr ""
+msgstr "Политика Конфиденциальности"
 
 #: .\templates\blank.html:285
 msgid "Orders and Returns"
-msgstr ""
+msgstr "Заказы и Возвраты"
 
 #: .\templates\blank.html:286
 msgid "Terms & Conditions"
-msgstr ""
+msgstr "Условия и Предложения"
 
 #: .\templates\blank.html:293
 msgid "Service"
-msgstr ""
+msgstr "Сервис"
 
 #: .\templates\blank.html:296
 msgid "View Cart"
-msgstr ""
+msgstr "Просмотр Корзины"
 
 #: .\templates\blank.html:297
 msgid "Wishlist"
-msgstr ""
+msgstr "Понравившееся"
 
 #: .\templates\blank.html:298
 msgid "Track My Order"
-msgstr ""
+msgstr "Отследить Заказ"
 
 #: .\templates\blank.html:299
 msgid "Help"
-msgstr ""
+msgstr "Помощь"
 
 #: .\venv\Lib\site-packages\django\contrib\messages\apps.py:16
 msgid "Messages"

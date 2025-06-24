@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-24 14:10+0300\n"
+"POT-Creation-Date: 2025-06-24 15:07+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,111 +20,131 @@ msgstr ""
 
 #: .\templates\blank.html:56 .\templates\blank.html:295
 msgid "My Account"
+msgstr "Mening Hsobim"
+
+#: .\templates\blank.html:83
+#, fuzzy
+#| msgid "Categories"
+msgid "All Categories"
+msgstr "Kategoriyalar"
+
+#: .\templates\blank.html:88
+msgid "Search"
 msgstr ""
+
+#: .\templates\blank.html:101
+#, fuzzy
+#| msgid "Wishlist"
+msgid "Your Wishlist"
+msgstr "Istaklar Ro'yxati"
 
 #: .\templates\blank.html:178
 msgid "Home"
-msgstr ""
+msgstr "Bosh Sahifa"
 
 #: .\templates\blank.html:180
 msgid "Product"
-msgstr ""
+msgstr "Mahsulot"
 
 #: .\templates\blank.html:182
 msgid "Store"
-msgstr ""
+msgstr "Do'kon"
 
 #: .\templates\blank.html:183 .\templates\blank.html:265
 msgid "Categories"
-msgstr ""
+msgstr "Kategoriyalar"
 
 #: .\templates\blank.html:185
 msgid "Blog"
-msgstr ""
+msgstr "Blog"
 
 #: .\templates\blank.html:188
 msgid "Logout"
-msgstr ""
+msgstr "Chiqish"
 
 #: .\templates\blank.html:190
 msgid "Login"
-msgstr ""
+msgstr "Kirish"
 
 #: .\templates\blank.html:192 .\templates\blank.html:283
 msgid "Contact Us"
-msgstr ""
+msgstr "Biz Bilan Bog'lanish"
 
 #: .\templates\blank.html:193
 msgid "Checkout"
-msgstr ""
+msgstr "Buyurtma Berish"
 
 #: .\templates\blank.html:215
 msgid "Sign Up for the"
-msgstr ""
+msgstr "Ro'yxatdan O'tish"
+
+#: .\templates\blank.html:215
+msgid "NEWSLETTER"
+msgstr "YANGILIKLAR"
 
 #: .\templates\blank.html:253 .\templates\blank.html:282
 msgid "About Us"
-msgstr ""
+msgstr "Biz Haqimizda"
 
 #: .\templates\blank.html:256
 msgid "1734 Stonecoal Road"
-msgstr ""
+msgstr "1734 Stonecoal ko'chasi"
 
 #: .\templates\blank.html:267
 msgid "Hot deals"
-msgstr ""
+msgstr "Aksiyalar"
 
 #: .\templates\blank.html:268
 msgid "Laptops"
-msgstr ""
+msgstr "Noutbuklar"
 
 #: .\templates\blank.html:269
 msgid "Smartphones"
-msgstr ""
+msgstr "Smartfonlar"
 
 #: .\templates\blank.html:270
 msgid "Cameras"
-msgstr ""
+msgstr "Fotokameralar"
 
 #: .\templates\blank.html:271
 msgid "Accessories"
-msgstr ""
+msgstr "Aksessuarlar"
 
 #: .\templates\blank.html:280
 msgid "Information"
-msgstr ""
+msgstr "Ma'lumot"
 
 #: .\templates\blank.html:284
 msgid "Privacy Policy"
-msgstr ""
+msgstr "Maxfiylik Siyosati"
 
 #: .\templates\blank.html:285
 msgid "Orders and Returns"
-msgstr ""
+msgstr "Buyurtmalar va Qaytarishlar"
 
 #: .\templates\blank.html:286
 msgid "Terms & Conditions"
-msgstr ""
+msgstr "Shartlar va Qoidalar"
 
 #: .\templates\blank.html:293
 msgid "Service"
-msgstr ""
+msgstr "Xizmat"
 
 #: .\templates\blank.html:296
 msgid "View Cart"
-msgstr ""
+msgstr "Savatni Ko'rish"
 
 #: .\templates\blank.html:297
 msgid "Wishlist"
-msgstr ""
+msgstr "Istaklar Ro'yxati"
 
 #: .\templates\blank.html:298
 msgid "Track My Order"
-msgstr ""
+msgstr "Buyurtmani Kuzatish"
 
 #: .\templates\blank.html:299
 msgid "Help"
-msgstr ""
+msgstr "Yordam"
 
 #: .\venv\Lib\site-packages\django\contrib\messages\apps.py:16
 msgid "Messages"

@@ -1,5 +1,6 @@
 {% extends 'blank.html' %}
 {% load static %}
+{% load i18n %}
 {% block content %}
 
 	<!-- SECTION -->
@@ -40,13 +41,13 @@
 				<!-- section title -->
 				<div class="col-md-12">
 					<div class="section-title">
-						<h3 class="title">New Products</h3>
+						<h3 class="title">{% trans 'New Products'%}</h3>
 						<div class="section-nav">
 							<ul class="section-tab-nav tab-nav">
-								<li class="active"><a data-toggle="tab" href="#tab1">Laptops</a></li>
-								<li><a data-toggle="tab" href="#tab1">Smartphones</a></li>
-								<li><a data-toggle="tab" href="#tab1">Cameras</a></li>
-								<li><a data-toggle="tab" href="#tab1">Accessories</a></li>
+								<li class="active"><a data-toggle="tab" href="#tab1">{% trans 'Laptops'%}</a></li>
+								<li><a data-toggle="tab" href="#tab1">{% trans 'Smartphones'%}</a></li>
+								<li><a data-toggle="tab" href="#tab1">{% trans 'Cameras'%}</a></li>
+								<li><a data-toggle="tab" href="#tab1">{% trans 'Accessories'%}</a></li>
 							</ul>
 						</div>
 					</div>
@@ -93,9 +94,9 @@
 											</div>
 											<div class="product-btns">
 												<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
-														class="tooltipp">add to wishlist</span></button>
+														class="tooltipp">{% trans 'add to wishlist'%}</span></button>
 												<button class="add-to-compare"><i class="fa fa-exchange"></i><span
-														class="tooltipp">add to compare</span></button>
+														class="tooltipp">{% trans 'add to compare'%}</span></button>
 														<a href="/main/productdetail/{{i.id}}/">
 															<button class="quick-view"><i class="fa fa-eye"></i><span
 																	class="tooltipp"></span></button>
@@ -104,8 +105,8 @@
 										</div>
 										<div class="add-to-cart">
 											{% if request.user.is_authenticated %}
-											<a href="/main/add/{{i.id}}/"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to
-												cart</button></a>
+											<a href="/main/add/{{i.id}}/"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i>{% trans 'add to
+												cart'%}</button></a>
 											{% endif %}	
 										</div>
 									</div>
@@ -138,31 +139,31 @@
 							<li>
 								<div>
 									<h3>02</h3>
-									<span>Days</span>
+									<span>{% trans 'Days'%}</span>
 								</div>
 							</li>
 							<li>
 								<div>
 									<h3>10</h3>
-									<span>Hours</span>
+									<span>{% trans 'Hours'%}</span>
 								</div>
 							</li>
 							<li>
 								<div>
 									<h3>34</h3>
-									<span>Mins</span>
+									<span>{% trans 'Mins'%}</span>
 								</div>
 							</li>
 							<li>
 								<div>
 									<h3>60</h3>
-									<span>Secs</span>
+									<span>{% trans 'Secs'%}</span>
 								</div>
 							</li>
 						</ul>
-						<h2 class="text-uppercase">hot deal this week</h2>
-						<p>New Collection Up to 50% OFF</p>
-						<a class="primary-btn cta-btn" href="#">Shop now</a>
+						<h2 class="text-uppercase">{% trans 'hot deal this week'%}</h2>
+						<p>{% trans 'New Collection Up to 50% OFF'%}</p>
+						<a class="primary-btn cta-btn" href="#">{% trans 'Shop now'%}</a>
 					</div>
 				</div>
 			</div>
@@ -182,13 +183,13 @@
 				<!-- section title -->
 				<div class="col-md-12">
 					<div class="section-title">
-						<h3 class="title">Top selling</h3>
+						<h3 class="title">{% trans 'Top selling'%}</h3>
 						<div class="section-nav">
 							<ul class="section-tab-nav tab-nav">
-								<li class="active"><a data-toggle="tab" href="#tab2">Laptops</a></li>
-								<li><a data-toggle="tab" href="#tab2">Smartphones</a></li>
-								<li><a data-toggle="tab" href="#tab2">Cameras</a></li>
-								<li><a data-toggle="tab" href="#tab2">Accessories</a></li>
+								<li class="active"><a data-toggle="tab" href="#tab2">{% trans 'Laptops'%}</a></li>
+								<li><a data-toggle="tab" href="#tab2">{% trans 'Smartphones'%}</a></li>
+								<li><a data-toggle="tab" href="#tab2">{% trans 'Cameras'%}</a></li>
+								<li><a data-toggle="tab" href="#tab2">{% trans 'Accessories'%}</a></li>
 							</ul>
 						</div>
 					</div>
@@ -235,16 +236,15 @@
 											</div>
 											<div class="product-btns">
 												<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
-														class="tooltipp">add to wishlist</span></button>
+														class="tooltipp">{% trans 'add to wishlist'%}</span></button>
 												<button class="add-to-compare"><i class="fa fa-exchange"></i><span
-														class="tooltipp">add to compare</span></button>
+														class="tooltipp">{% trans 'add to compare'%}</span></button>
 												<button class="quick-view"><i class="fa fa-eye"></i><span
-														class="tooltipp">quick view</span></button>
+														class="tooltipp">{% trans 'quick view'%}</span></button>
 											</div>
 										</div>
 										<div class="add-to-cart">
-											<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to
-												cart</button>
+											<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i>{% trans 'add to cart'%}</button>
 										</div>
 									</div>
 									{% endfor %}
@@ -272,7 +272,7 @@
 			<div class="row">
 				<div class="col-md-4 col-xs-6">
 					<div class="section-title">
-						<h4 class="title">Top selling</h4>
+						<h4 class="title">{% trans 'Top selling'%}</h4>
 						<div class="section-nav">
 							<div id="slick-nav-3" class="products-slick-nav"></div>
 						</div>
@@ -305,7 +305,7 @@
 
 				<div class="col-md-4 col-xs-6">
 					<div class="section-title">
-						<h4 class="title">Top selling</h4>
+						<h4 class="title">{% trans 'Top selling'%}</h4>
 						<div class="section-nav">
 							<div id="slick-nav-4" class="products-slick-nav"></div>
 						</div>
@@ -342,7 +342,7 @@
 
 				<div class="col-md-4 col-xs-6">
 					<div class="section-title">
-						<h4 class="title">Top selling</h4>
+						<h4 class="title">{% trans 'Top selling'%}</h4>
 						<div class="section-nav">
 							<div id="slick-nav-5" class="products-slick-nav"></div>
 						</div>

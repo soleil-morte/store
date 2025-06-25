@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-24 15:07+0300\n"
+"POT-Creation-Date: 2025-06-25 12:25+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -94,19 +94,23 @@ msgstr "1734 Stonecoal ko'chasi"
 msgid "Hot deals"
 msgstr "Aksiyalar"
 
-#: .\templates\blank.html:268
+#: .\templates\blank.html:268 .\templates\index.html:47
+#: .\templates\index.html:189
 msgid "Laptops"
 msgstr "Noutbuklar"
 
-#: .\templates\blank.html:269
+#: .\templates\blank.html:269 .\templates\index.html:48
+#: .\templates\index.html:190
 msgid "Smartphones"
 msgstr "Smartfonlar"
 
-#: .\templates\blank.html:270
+#: .\templates\blank.html:270 .\templates\index.html:49
+#: .\templates\index.html:191
 msgid "Cameras"
 msgstr "Fotokameralar"
 
-#: .\templates\blank.html:271
+#: .\templates\blank.html:271 .\templates\index.html:50
+#: .\templates\index.html:192
 msgid "Accessories"
 msgstr "Aksessuarlar"
 
@@ -145,6 +149,56 @@ msgstr "Buyurtmani Kuzatish"
 #: .\templates\blank.html:299
 msgid "Help"
 msgstr "Yordam"
+
+#: .\templates\index.html:44
+msgid "New Products"
+msgstr "Yangi Mahsulot"
+
+#: .\templates\index.html:97 .\templates\index.html:239
+msgid "add to wishlist"
+msgstr "Istaklar Ro'yxatiga qoshish"
+
+#: .\templates\index.html:99 .\templates\index.html:241
+msgid "add to compare"
+msgstr "taqqoslashga qo'shish"
+
+#: .\templates\index.html:142
+msgid "Days"
+msgstr "Kun"
+
+#: .\templates\index.html:148
+msgid "Hours"
+msgstr "Soat"
+
+#: .\templates\index.html:154
+msgid "Mins"
+msgstr "Daqiqa"
+
+#: .\templates\index.html:160
+msgid "Secs"
+msgstr "Soniya"
+
+#: .\templates\index.html:164
+msgid "hot deal this week"
+msgstr "shu haftaning aksiyasi"
+
+#: .\templates\index.html:165
+#, python-format
+msgid "New Collection Up to 50%% OFF"
+msgstr "Yangi Kolleksiya 50%% gacha chegirma"
+
+#: .\templates\index.html:166
+msgid "Shop now"
+msgstr "Hoziroq xarid qiling"
+
+#: .\templates\index.html:186 .\templates\index.html:276
+#: .\templates\index.html:309 .\templates\index.html:346
+msgid "Top selling"
+msgstr "Eng ko'p sotilgan"
+
+#: .\templates\index.html:243
+msgid "quick view"
+msgstr "tezkor ko'rish"
 
 #: .\venv\Lib\site-packages\django\contrib\messages\apps.py:16
 msgid "Messages"

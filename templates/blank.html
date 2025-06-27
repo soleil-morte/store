@@ -80,13 +80,13 @@
 					<!-- SEARCH BAR -->
 					<div class="col-md-6">
 						<div class="header-search">
-							<form>
+							<form method="GET" action="/en/main/index/">
 								<select class="input-select">
 									<option value="0">{% trans 'All Categories'%}</option>
 									<option value="1">Category 01</option>
 									<option value="1">Category 02</option>
 								</select>
-								<input class="input" placeholder="Search here">
+								<input class="input" name="q" placeholder="Search here">
 								<button class="search-btn">{% trans 'Search'%}</button>
 							</form>
 						</div>

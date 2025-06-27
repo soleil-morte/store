@@ -6,6 +6,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import authenticate,login,logout 
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import get_object_or_404
+from django.db.models import Q
 
 # Create your views here.
 class ProductDetail(DetailView):
@@ -23,6 +24,16 @@ def Index(request):
         'category':Category.objects.all(),
         'product':Products.objects.all()
     }
+
+    if 'q' in request.GET:
+        q = request.GET['q']
+        context['product'] = Products.objects.filter(
+            Q(name__icontains=q)|
+            Q(category__name__icontains=q)
+        )
+        context['q'] = q 
+
+
     return render(request, 'index.html', context)
 
 def Cart(request):

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-25 12:24+0300\n"
+"POT-Creation-Date: 2025-07-02 12:48+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,147 +18,141 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\templates\blank.html:56 .\templates\blank.html:295
+#: .\templates\blank.html:58 .\templates\blank.html:300
 msgid "My Account"
 msgstr "My Account"
 
-#: .\templates\blank.html:83
-#, fuzzy
-#| msgid "Categories"
+#: .\templates\blank.html:85
 msgid "All Categories"
-msgstr "Categories"
+msgstr "All Categories"
 
-#: .\templates\blank.html:88
+#: .\templates\blank.html:90
 msgid "Search"
 msgstr "Search"
 
-#: .\templates\blank.html:101
+#: .\templates\blank.html:103
 msgid "Your Wishlist"
 msgstr "Your Wishlist"
 
-#: .\templates\blank.html:178
+#: .\templates\blank.html:181
 msgid "Home"
 msgstr "Home"
 
-#: .\templates\blank.html:180
+#: .\templates\blank.html:183
 msgid "Product"
 msgstr "Product"
 
-#: .\templates\blank.html:182
+#: .\templates\blank.html:185
 msgid "Store"
 msgstr "Store"
 
-#: .\templates\blank.html:183 .\templates\blank.html:265
+#: .\templates\blank.html:186 .\templates\blank.html:270
 msgid "Categories"
-msgstr "Categories"
-
-#: .\templates\blank.html:185
-msgid "Blog"
-msgstr "Blog"
+msgstr ""
 
 #: .\templates\blank.html:188
+msgid "Blog"
+msgstr "Categories"
+
+#: .\templates\blank.html:191
 msgid "Logout"
 msgstr "Logout"
 
-#: .\templates\blank.html:190
+#: .\templates\blank.html:193
 msgid "Login"
 msgstr "Login"
 
-#: .\templates\blank.html:192 .\templates\blank.html:283
+#: .\templates\blank.html:195 .\templates\blank.html:288
 msgid "Contact Us"
 msgstr "Contact Us"
 
-#: .\templates\blank.html:193
+#: .\templates\blank.html:196
 msgid "Checkout"
 msgstr "Checkout"
 
-#: .\templates\blank.html:215
+#: .\templates\blank.html:218
 msgid "Sign Up for the"
 msgstr "Sign Up for the"
 
-#: .\templates\blank.html:215
+#: .\templates\blank.html:218
 msgid "NEWSLETTER"
 msgstr "NEWSLETTER"
 
-#: .\templates\blank.html:253 .\templates\blank.html:282
+#: .\templates\blank.html:256 .\templates\blank.html:287
 msgid "About Us"
 msgstr "About Us"
 
-#: .\templates\blank.html:256
+#: .\templates\blank.html:260
 msgid "1734 Stonecoal Road"
 msgstr "1734 Stonecoal Road"
 
-#: .\templates\blank.html:267
+#: .\templates\blank.html:272
 msgid "Hot deals"
 msgstr "Hot deals"
 
-#: .\templates\blank.html:268 .\templates\index.html:47
+#: .\templates\blank.html:273 .\templates\index.html:47
 #: .\templates\index.html:189
 msgid "Laptops"
 msgstr "Laptops"
 
-#: .\templates\blank.html:269 .\templates\index.html:48
+#: .\templates\blank.html:274 .\templates\index.html:48
 #: .\templates\index.html:190
 msgid "Smartphones"
 msgstr "Smartphones"
 
-#: .\templates\blank.html:270 .\templates\index.html:49
+#: .\templates\blank.html:275 .\templates\index.html:49
 #: .\templates\index.html:191
 msgid "Cameras"
 msgstr "Cameras"
 
-#: .\templates\blank.html:271 .\templates\index.html:50
+#: .\templates\blank.html:276 .\templates\index.html:50
 #: .\templates\index.html:192
 msgid "Accessories"
 msgstr "Accessories"
 
-#: .\templates\blank.html:280
+#: .\templates\blank.html:285
 msgid "Information"
 msgstr "Information"
 
-#: .\templates\blank.html:284
+#: .\templates\blank.html:289
 msgid "Privacy Policy"
 msgstr "Privacy Policy"
 
-#: .\templates\blank.html:285
+#: .\templates\blank.html:290
 msgid "Orders and Returns"
 msgstr "Orders and Returns"
 
-#: .\templates\blank.html:286
+#: .\templates\blank.html:291
 msgid "Terms & Conditions"
 msgstr "Terms & Conditions"
 
-#: .\templates\blank.html:293
+#: .\templates\blank.html:298
 msgid "Service"
 msgstr "Service"
 
-#: .\templates\blank.html:296
+#: .\templates\blank.html:301
 msgid "View Cart"
 msgstr "View Cart"
 
-#: .\templates\blank.html:297
+#: .\templates\blank.html:302
 msgid "Wishlist"
 msgstr "Wishlist"
 
-#: .\templates\blank.html:298
+#: .\templates\blank.html:303
 msgid "Track My Order"
 msgstr "Track My Order"
 
-#: .\templates\blank.html:299
+#: .\templates\blank.html:304
 msgid "Help"
 msgstr "Help"
 
 #: .\templates\index.html:44
-#, fuzzy
-#| msgid "Product"
 msgid "New Products"
-msgstr "Product"
+msgstr "New Products"
 
 #: .\templates\index.html:97 .\templates\index.html:239
-#, fuzzy
-#| msgid "Your Wishlist"
 msgid "add to wishlist"
-msgstr "Your Wishlist"
+msgstr "add to wishlist"
 
 #: .\templates\index.html:99 .\templates\index.html:241
 msgid "add to compare"
@@ -193,8 +187,8 @@ msgstr "New Collection Up to 50%% OFF"
 msgid "Shop now"
 msgstr "Shop now"
 
-#: .\templates\index.html:186 .\templates\index.html:276
-#: .\templates\index.html:309 .\templates\index.html:346
+#: .\templates\index.html:186 .\templates\index.html:275
+#: .\templates\index.html:308 .\templates\index.html:345
 msgid "Top selling"
 msgstr "Top selling"
 
@@ -202,21 +196,25 @@ msgstr "Top selling"
 msgid "quick view"
 msgstr "quick view"
 
+#: .\templates\index.html:247
+msgid "add to cart"
+msgstr "add to cart"
+
 #: .\venv\Lib\site-packages\django\contrib\messages\apps.py:16
 msgid "Messages"
-msgstr "Messages"
+msgstr ""
 
 #: .\venv\Lib\site-packages\django\contrib\sitemaps\apps.py:8
 msgid "Site Maps"
-msgstr "Site Maps"
+msgstr ""
 
 #: .\venv\Lib\site-packages\django\contrib\staticfiles\apps.py:9
 msgid "Static Files"
-msgstr "Static Files"
+msgstr ""
 
 #: .\venv\Lib\site-packages\django\contrib\syndication\apps.py:7
 msgid "Syndication"
-msgstr "Syndication"
+msgstr ""
 
 #. Translators: String used to replace omitted page numbers in elided page
 #. range generated by paginators, e.g. [1, 2, '…', 5, 6, 7, '…', 9, 10].

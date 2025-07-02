@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-25 12:24+0300\n"
+"POT-Creation-Date: 2025-07-02 12:48+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,149 +20,145 @@ msgstr ""
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
 "(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: .\templates\blank.html:56 .\templates\blank.html:295
+#: .\templates\blank.html:58 .\templates\blank.html:300
 msgid "My Account"
 msgstr "Мой Аккаунт"
 
-#: .\templates\blank.html:83
-#, fuzzy
-#| msgid "Categories"
+#: .\templates\blank.html:85
 msgid "All Categories"
-msgstr "Категории"
+msgstr "Все Категории"
 
-#: .\templates\blank.html:88
+#: .\templates\blank.html:90
 msgid "Search"
-msgstr ""
+msgstr "Найти"
 
-#: .\templates\blank.html:101
-#, fuzzy
-#| msgid "Wishlist"
+#: .\templates\blank.html:103
 msgid "Your Wishlist"
-msgstr "Понравившееся"
+msgstr "Ваш Список желаний"
 
-#: .\templates\blank.html:178
+#: .\templates\blank.html:181
 msgid "Home"
 msgstr "Главная"
 
-#: .\templates\blank.html:180
+#: .\templates\blank.html:183
 msgid "Product"
 msgstr "Товар"
 
-#: .\templates\blank.html:182
+#: .\templates\blank.html:185
 msgid "Store"
 msgstr "Магазин"
 
-#: .\templates\blank.html:183 .\templates\blank.html:265
+#: .\templates\blank.html:186 .\templates\blank.html:270
 msgid "Categories"
 msgstr "Категории"
 
-#: .\templates\blank.html:185
+#: .\templates\blank.html:188
 msgid "Blog"
 msgstr "Блог"
 
-#: .\templates\blank.html:188
+#: .\templates\blank.html:191
 msgid "Logout"
 msgstr "Выйти"
 
-#: .\templates\blank.html:190
+#: .\templates\blank.html:193
 msgid "Login"
 msgstr "Войти"
 
-#: .\templates\blank.html:192 .\templates\blank.html:283
+#: .\templates\blank.html:195 .\templates\blank.html:288
 msgid "Contact Us"
-msgstr "Связаться с нами"
+msgstr "Связаться С Нами"
 
-#: .\templates\blank.html:193
+#: .\templates\blank.html:196
 msgid "Checkout"
-msgstr "Оформление Заказа"
+msgstr "Оформление заказа"
 
-#: .\templates\blank.html:215
+#: .\templates\blank.html:218
 msgid "Sign Up for the"
 msgstr "Подписаться на"
 
-#: .\templates\blank.html:215
+#: .\templates\blank.html:218
 msgid "NEWSLETTER"
 msgstr "РАССЫЛКУ"
 
-#: .\templates\blank.html:253 .\templates\blank.html:282
+#: .\templates\blank.html:256 .\templates\blank.html:287
 msgid "About Us"
 msgstr "О Нас"
 
-#: .\templates\blank.html:256
+#: .\templates\blank.html:260
 msgid "1734 Stonecoal Road"
 msgstr "ул. Стоункоул, 1734"
 
-#: .\templates\blank.html:267
+#: .\templates\blank.html:272
 msgid "Hot deals"
-msgstr "Акции"
+msgstr "Горячие Предложения"
 
-#: .\templates\blank.html:268 .\templates\index.html:47
+#: .\templates\blank.html:273 .\templates\index.html:47
 #: .\templates\index.html:189
 msgid "Laptops"
 msgstr "Ноутбуки"
 
-#: .\templates\blank.html:269 .\templates\index.html:48
+#: .\templates\blank.html:274 .\templates\index.html:48
 #: .\templates\index.html:190
 msgid "Smartphones"
 msgstr "Смартфоны"
 
-#: .\templates\blank.html:270 .\templates\index.html:49
+#: .\templates\blank.html:275 .\templates\index.html:49
 #: .\templates\index.html:191
 msgid "Cameras"
 msgstr "Фотоаппараты"
 
-#: .\templates\blank.html:271 .\templates\index.html:50
+#: .\templates\blank.html:276 .\templates\index.html:50
 #: .\templates\index.html:192
 msgid "Accessories"
 msgstr "Аксессуары"
 
-#: .\templates\blank.html:280
+#: .\templates\blank.html:285
 msgid "Information"
 msgstr "Информация"
 
-#: .\templates\blank.html:284
+#: .\templates\blank.html:289
 msgid "Privacy Policy"
 msgstr "Политика Конфиденциальности"
 
-#: .\templates\blank.html:285
+#: .\templates\blank.html:290
 msgid "Orders and Returns"
 msgstr "Заказы и Возвраты"
 
-#: .\templates\blank.html:286
+#: .\templates\blank.html:291
 msgid "Terms & Conditions"
-msgstr "Условия и Предложения"
+msgstr "Условия и положения"
 
-#: .\templates\blank.html:293
+#: .\templates\blank.html:298
 msgid "Service"
-msgstr "Сервис"
+msgstr "ервис"
 
-#: .\templates\blank.html:296
+#: .\templates\blank.html:301
 msgid "View Cart"
 msgstr "Просмотр Корзины"
 
-#: .\templates\blank.html:297
+#: .\templates\blank.html:302
 msgid "Wishlist"
-msgstr "Понравившееся"
+msgstr "Список Желаний"
 
-#: .\templates\blank.html:298
+#: .\templates\blank.html:303
 msgid "Track My Order"
 msgstr "Отследить Заказ"
 
-#: .\templates\blank.html:299
+#: .\templates\blank.html:304
 msgid "Help"
 msgstr "Помощь"
 
 #: .\templates\index.html:44
 msgid "New Products"
-msgstr "Новый Товар"
+msgstr "Новые Товары"
 
 #: .\templates\index.html:97 .\templates\index.html:239
 msgid "add to wishlist"
-msgstr "добавить в понравившееся"
+msgstr "добавить в список желаний"
 
 #: .\templates\index.html:99 .\templates\index.html:241
 msgid "add to compare"
-msgstr "добавить чтобы сравнить"
+msgstr "добавить для сравнениия"
 
 #: .\templates\index.html:142
 msgid "Days"
@@ -182,41 +178,45 @@ msgstr "Секунд"
 
 #: .\templates\index.html:164
 msgid "hot deal this week"
-msgstr "Акции этой недели"
+msgstr "акции на этой неделе"
 
 #: .\templates\index.html:165
 #, python-format
 msgid "New Collection Up to 50%% OFF"
-msgstr "Новая Коллекция Со Скидкой в 50%%"
+msgstr "Новая Коллекция Со Скидкой до 50%%"
 
 #: .\templates\index.html:166
 msgid "Shop now"
-msgstr "Показать Сейчас"
+msgstr "Купить сейчас"
 
-#: .\templates\index.html:186 .\templates\index.html:276
-#: .\templates\index.html:309 .\templates\index.html:346
+#: .\templates\index.html:186 .\templates\index.html:275
+#: .\templates\index.html:308 .\templates\index.html:345
 msgid "Top selling"
-msgstr "Популярные Товары"
+msgstr "Топ продаж"
 
 #: .\templates\index.html:243
 msgid "quick view"
-msgstr "просмотр"
+msgstr "быстрый просмотр"
+
+#: .\templates\index.html:247
+msgid "add to cart"
+msgstr "в корзину"
 
 #: .\venv\Lib\site-packages\django\contrib\messages\apps.py:16
 msgid "Messages"
-msgstr "Сообщения"
+msgstr ""
 
 #: .\venv\Lib\site-packages\django\contrib\sitemaps\apps.py:8
 msgid "Site Maps"
-msgstr "Карта Сайта"
+msgstr ""
 
 #: .\venv\Lib\site-packages\django\contrib\staticfiles\apps.py:9
 msgid "Static Files"
-msgstr "Статические файлы"
+msgstr ""
 
 #: .\venv\Lib\site-packages\django\contrib\syndication\apps.py:7
 msgid "Syndication"
-msgstr "Синдикация"
+msgstr ""
 
 #. Translators: String used to replace omitted page numbers in elided page
 #. range generated by paginators, e.g. [1, 2, '…', 5, 6, 7, '…', 9, 10].
